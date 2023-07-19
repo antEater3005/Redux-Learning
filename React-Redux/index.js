@@ -65,6 +65,11 @@ const ice_cream_reducers = (state = initialIceCreamState, action) => {
         ...state,
         numberOfIcecreams: state.numberOfIcecreams + action.payload,
       };
+    case CAKE_ORDERED:
+      return {
+        ...state,
+        numberOfIcecreams: state.numberOfIcecreams - 1,
+      };
 
     default:
       return state;

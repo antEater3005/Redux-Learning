@@ -20,6 +20,8 @@ const cakeSlice = createSlice({
       state.numberOfCakes += action.payload;
     },
   },
+  //! This will react to all the actions not matter the origin slice
+  extraReducers: {},
 });
 
 module.exports = cakeSlice.reducer; // default export
