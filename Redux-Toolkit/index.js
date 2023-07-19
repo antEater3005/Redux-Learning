@@ -10,11 +10,9 @@ const store = require('./app/store');
 const cakeActions = require('./features/cake/cakeSlice').cakeActions; //! named import
 const { iceCreamActions } = require('./features/icecream/iceCreamSlice'); //! also a named import
 
-console.log('initialState: ', store.getState());
+// console.log('initialState: ', store.getState());
 
-const unsubscribe = store.subscribe(() => {
-  console.log('Updated state: ', store.getState());
-});
+const unsubscribe = store.subscribe(() => {});
 
 store.dispatch(cakeActions.ordered(3));
 store.dispatch(cakeActions.restocked(3));
