@@ -4,6 +4,9 @@
  *? Redux toolkit is the official, opinionated, batteries-included toolset for efficient Redux development
  ** like abstract over setup process, handling the most common use cases, and includes some useful utilities.
  *! We develop the same cake shop example in the index.js file using Redux-Toolkit library
+ *
+ *! In Redux a reducer can respond to any action dispatched but in Redux-Toolkit each slice have there own actions which only call there own slice reducers
+ *! To resolve this we create extra reducers   
  */
 
 const store = require('./app/store');
